@@ -1,0 +1,35 @@
+Source: librole-tiny-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libclass-method-modifiers-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/librole-tiny-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/librole-tiny-perl.git
+Homepage: https://metacpan.org/release/Role-Tiny
+Rules-Requires-Root: no
+
+Package: librole-tiny-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libclass-method-modifiers-perl
+Description: Perl module for minimalist role composition
+ Role::Tiny is a Perl module to do minimalist role composition. Role composition
+ can be thought of as much more clever and meaningful multiple inheritance.
+ .
+ The basics of this implementation of roles is:
+  * If a method is already defined on a class, that method will not be composed
+    in from the role.
+  * If a method that the role "requires" to be implemented is not implemented,
+    role application will fail loudly.
+ .
+ Unlike Class::C3, where the last class inherited from "wins", role composition
+ is the other way around, where first wins. In a more complete system (see
+ Moose) roles are checked to see if they clash. The goal of this is to be much
+ simpler, hence disallowing composition of multiple roles at once.

@@ -1,0 +1,9 @@
+librole-tiny-perl (2.000001-1) experimental; urgency=low
+
+  Citing from upstream's Changes file:
+
+  * Incompatible Changes
+    - Role::Tiny no longer applies fatal warnings to roles created with it.
+      strict and non-fatal warnings will continue to be applied.
+
+ -- Axel Beckert <abe@debian.org>  Wed, 01 Jul 2015 01:06:41 +0200

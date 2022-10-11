@@ -1,0 +1,232 @@
+librole-tiny-perl (2.002004-1) unstable; urgency=medium
+
+  * Import upstream version 2.002004.
+    - restore requiring base class when using create_class_with_roles, which was
+      accidentally lost in 2.002_000 (RT#134075)
+    Closes: #980660
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 24 Jan 2021 17:34:25 +0100
+
+librole-tiny-perl (2.002003-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ gregor herrmann ]
+  * Import upstream version 2.002003.
+  * Remove unneeded test dependencies.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 16 Jan 2021 18:00:07 +0100
+
+librole-tiny-perl (2.001004-1) unstable; urgency=medium
+
+  * Import upstream version 2.001004.
+    Fixes "libmoox-options-perl: test regression with librole-tiny-perl
+    2.001003-1" (Closes: #942275)
+  * Update years of packaging copyright.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 25 Oct 2019 13:30:00 +0200
+
+librole-tiny-perl (2.001003-1) unstable; urgency=medium
+
+  * Team upload
+  * Import upstream release 2.001003
+  * Explicitly declare dependencies provided by perl or perl-base
+  * Declare that debian/rules does not need (fake)root
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 13 Oct 2019 05:52:13 +0000
+
+librole-tiny-perl (2.001001-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.001001
+  * Bump Standards-Version to 4.4.1
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 06 Oct 2019 20:10:16 +0530
+
+librole-tiny-perl (2.000008-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Utkarsh Gupta ]
+  * New upstream version 2.000008
+  * Bump Standards-Version to 4.4.0
+  * Bump debhelper-compat to 12
+  * Update d/copyright years
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 15 Sep 2019 12:53:48 +0530
+
+librole-tiny-perl (2.000006-1) unstable; urgency=medium
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ gregor herrmann ]
+  * Import upstream version 2.000006.
+  * Update debian/upstream/metadata.
+  * Add /me to Uploaders.
+  * Declare compliance with Debian Policy 4.1.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 15 Nov 2017 20:29:21 +0100
+
+librole-tiny-perl (2.000005-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Nuno Carvalho ]
+  * Import upstream version 2.000005.
+
+ -- Nuno Carvalho <smash@cpan.org>  Wed, 02 Nov 2016 12:33:05 +0000
+
+librole-tiny-perl (2.000003-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Import upstream version 2.000003.
+  * Update build dependencies.
+  * Bump debhelper compatibility level to 9.
+  * Declare compliance with Debian Policy 3.9.8.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 May 2016 21:02:28 +0200
+
+librole-tiny-perl (2.000001-2) unstable; urgency=low
+
+  * Upload to unstable again. (Team upload)
+
+ -- Axel Beckert <abe@debian.org>  Mon, 13 Jul 2015 21:17:52 +0200
+
+librole-tiny-perl (2.000001-1) experimental; urgency=low
+
+  * Team upload
+  * Imported Upstream version 2.000001
+    + Add a NEWS.Debian file to list incompatible upstream changes.
+
+ -- Axel Beckert <abe@debian.org>  Wed, 01 Jul 2015 01:06:32 +0200
+
+librole-tiny-perl (1.003004-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.003004
+  * debian/copyright: drop section about removed file.
+  * debian/control: drop Breaks on ancient libmoo-perl version.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 23 Oct 2014 23:38:42 +0200
+
+librole-tiny-perl (1.003003-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Axel Beckert ]
+  * Import new upstream release
+  * Bump Standards-Version to 3.9.5 (no changes)
+  * Apply wrap-and-sort
+
+ -- Axel Beckert <abe@debian.org>  Wed, 19 Mar 2014 01:46:23 +0100
+
+librole-tiny-perl (1.003002-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release
+
+ -- Axel Beckert <abe@debian.org>  Sat, 28 Sep 2013 03:02:06 +0200
+
+librole-tiny-perl (1.003001-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 16 Jul 2013 20:09:04 +0200
+
+librole-tiny-perl (1.002005-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Alessandro Ghedini ]
+  * New upstream release
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 12 Feb 2013 14:11:49 +0100
+
+librole-tiny-perl (1.002004-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * debian/copyright: add new upstream copyright holder.
+  * Bump Standards-Version to 3.9.4 (no changes).
+  * Add build dependency on libnamespace-autoclean-perl for test suite.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 09 Dec 2012 17:47:41 +0100
+
+librole-tiny-perl (1.001005-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+  * debian/copyright: Add new upstream copyright holders.
+
+  [ Nuno Carvalho ]
+  * New upstream release.
+
+ -- Nuno Carvalho <smash@cpan.org>  Wed, 25 Jul 2012 21:40:23 +0100
+
+librole-tiny-perl (1.001003-1) unstable; urgency=low
+
+  * New upstream release
+  * Build depend on libstrictures-perl (needed by a test)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Wed, 20 Jun 2012 11:41:19 +0200
+
+librole-tiny-perl (1.001002-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 08 May 2012 12:13:11 +0200
+
+librole-tiny-perl (1.001001-1) unstable; urgency=low
+
+  * New upstream release
+  * Add copyright section for t/role-basic/lib/Try/Tiny.pm
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Fri, 27 Apr 2012 12:28:45 +0200
+
+librole-tiny-perl (1.000001-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 09 Apr 2012 19:27:22 +0200
+
+librole-tiny-perl (1.000000-1) unstable; urgency=low
+
+  * Initial release (Closes: #666758)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sun, 01 Apr 2012 18:16:15 +0200
